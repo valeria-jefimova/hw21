@@ -12,4 +12,4 @@ class Shop(BaseStorage):
             # TODO: Вывести ошибку, что на складе слишком много разных товаров
             ...
 
-    super().add(name, amount)
+        super().add(name, amount)
