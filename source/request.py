@@ -1,5 +1,5 @@
 class Request:
-    def __init__(self, request, storages, AbstractStorage):
+    def __init__(self, request, storages):
         split_request = request.strip().lower().split(' ')
         if len(split_request) != 7:
             # Todo: Вывести ошибку, что запрос неправильный

@@ -7,7 +7,6 @@ class Shop(BaseStorage):
         self.max_unique_items = max_unique_items
         super().__init__(items, capacity)
 
-
     def add(self, name, amount):
         if self.get_unique_items_count() >= self.max_unique_items:
             # TODO: Вывести ошибку, что на складе слишком много разных товаров

@@ -2,7 +2,7 @@ from source.abstract_storage import AbstractStorage
 
 
 class BaseStorage(AbstractStorage):
-    def __int__(self, items, capacity):
+    def __init__(self, items, capacity):
         self.__items = items
         self.__capacity = capacity
 

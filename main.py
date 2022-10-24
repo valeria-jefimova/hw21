@@ -6,7 +6,7 @@ from source.shop import Shop
 from source.store import Store
 
 store = Store(
-    item={
+    items={
         'картошка': 120,
         'яблоки': 86,
         'бананы': 74,
@@ -50,6 +50,8 @@ def main():
         # TODO: Доставить товар
         courier = Request(request=request, storages=storages)
         courier.move
+
+
 
 
 if __name__ == '__main__':
