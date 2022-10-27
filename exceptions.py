@@ -19,4 +19,5 @@ class InvalidRequestError(BaseError):
 
 
 class UnknownStorage(BaseError):
-    message = 'Склад неизвестен'
+    message = 'Склад неизвестен!'
+
