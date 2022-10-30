@@ -12,8 +12,8 @@ class Request:
 
         self.amount = int(split_request[1])
         self.product = split_request[2]
-        self.departure = split_request[3]
-        self.destionation = split_request[6]
+        self.departure = split_request[4]
+        self.destination = split_request[6]
 
-        if self.departure not in storages or self.destionation not in storages:
+        if self.departure not in storages or self.destination not in storages:
             raise UnknownStorage
