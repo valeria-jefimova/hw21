@@ -15,8 +15,8 @@ class Courier:
         self.departure.remove(name=self.__request.product, amount=self.__request.amount)
         print(f'Курьер забирает {self.__request.amount} {self.__request.product} из {self.__request.departure}')
 
-        print(f'Курьер везёт {self.__request.amount} {self.__request.product} '
-              f'со {self.__request.departure}')
+        print(f'Курьер везёт {self.__request.amount} {self.__request.product} со {self.__request.departure}'
+              f'в {self.__request.destination}')
 
         self.destination.add(name=self.__request.product, amount=self.__request.amount)
         print(f'Курьер доставил {self.__request.amount} {self.__request.product} в {self.__request.destination}')
